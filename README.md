@@ -6,7 +6,7 @@ This project provides a clean and user-friendly interface with basic arithmetic 
 
 ## 🚀 Live Demo
 
-👉 **[View Live Calculator](YOUR-LIVE-LINK-HERE)**
+👉 https://anoop839791.github.io/Calculator/
 
 ## ✨ Features
 
