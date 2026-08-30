@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 350px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    min-height: 100px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#previous {
+    min-height: 25px;
+    color: #aaa;
+    font-size: 18px;
+}
+
+#current {
+    font-size: 40px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 65px;
+    border: none;
+    border-radius: 12px;
+    background: #333;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #444;
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background: #ff9500;
+}
+
+.operator:hover {
+    background: #e68600;
+}
+
+.equal {
+    background: #28a745;
+}
+
+.equal:hover {
+    background: #218838;
+}
+
+.clear {
+    background: #dc3545;
+}
+
+.clear:hover {
+    background: #c82333;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Extra Styling */
+
+.calculator {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.display {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 92%;
+        padding: 15px;
+    }
+
+    button {
+        height: 58px;
+        font-size: 20px;
+    }
+
+    #current {
+        font-size: 34px;
+    }
+}
